@@ -6,6 +6,7 @@ const route = useRoute()
 const router = useRouter()
 const store = useTestStore()
 const nav = [
+  { name:'schedule', label:'天窗动态排程' },
   { name:'overview', label:'回归总览' },
   { name:'station', label:'站场与进路' },
   { name:'cases', label:'测试用例' },
@@ -15,6 +16,7 @@ const nav = [
 </script>
 
 <template>
+  <n-message-provider>
   <n-layout class="shell">
     <n-layout-sider :width="230" class="sider">
       <div class="brand"><span>联</span><div><b>信号联锁测试台</b><small>INTERLOCKING QA</small></div></div>
@@ -26,4 +28,5 @@ const nav = [
       <n-layout-content class="main"><router-view /></n-layout-content>
     </n-layout>
   </n-layout>
+  </n-message-provider>
 </template>

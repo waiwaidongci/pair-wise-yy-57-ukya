@@ -4,6 +4,7 @@ import Station from './views/Station.vue'
 import Cases from './views/Cases.vue'
 import Execution from './views/Execution.vue'
 import Release from './views/Release.vue'
+import Schedule from './schedule/Schedule.vue'
 
 export default createRouter({
   history:createWebHistory(),
@@ -13,5 +14,6 @@ export default createRouter({
     { path:'/cases',name:'cases',component:Cases },
     { path:'/execution',name:'execution',component:Execution },
     { path:'/release',name:'release',component:Release },
+    { path:'/schedule',name:'schedule',component:Schedule },
   ],
 })
