@@ -3,6 +3,7 @@ import Overview from './views/Overview.vue'
 import Station from './views/Station.vue'
 import Cases from './views/Cases.vue'
 import Execution from './views/Execution.vue'
+import Scheduling from './views/Scheduling.vue'
 import Release from './views/Release.vue'
 
 export default createRouter({
@@ -12,6 +13,7 @@ export default createRouter({
     { path:'/station',name:'station',component:Station },
     { path:'/cases',name:'cases',component:Cases },
     { path:'/execution',name:'execution',component:Execution },
+    { path:'/scheduling',name:'scheduling',component:Scheduling },
     { path:'/release',name:'release',component:Release },
   ],
 })
